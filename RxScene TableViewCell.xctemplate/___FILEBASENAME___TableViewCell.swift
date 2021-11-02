@@ -7,7 +7,6 @@ import SnapKit
 
 class ___VARIABLE_tableCellName___TableViewCell: UITableViewCell {
 
-    
     private var disposeBag = DisposeBag()
     var viewModel: ___VARIABLE_tableCellName___CellViewModel! {
         didSet {
@@ -20,20 +19,20 @@ class ___VARIABLE_tableCellName___TableViewCell: UITableViewCell {
         
         configureView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
     }
-    
+
     private func configureView() {
         
     }
-    
+
     private func bindViewModel() {
         assert(viewModel != nil)
         

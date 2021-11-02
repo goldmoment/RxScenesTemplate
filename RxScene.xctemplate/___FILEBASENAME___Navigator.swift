@@ -9,7 +9,7 @@ protocol ___VARIABLE_sceneName___Navigator {
 class Default___VARIABLE_sceneName___Navigator: ___VARIABLE_sceneName___Navigator {
     private let navigationController: UINavigationController
     private let store: StoreInterface
-    
+
     init(store: StoreInterface, navigationController: UINavigationController) {
         self.store = store
         self.navigationController = navigationController
@@ -21,7 +21,7 @@ class Default___VARIABLE_sceneName___Navigator: ___VARIABLE_sceneName___Navigato
 
         // View model
         let viewModel = ___VARIABLE_sceneName___ViewModel.initialize(
-            withStore: store, 
+            withStore: store,
             navigator: self,
             localDependency: localDependency)
 
