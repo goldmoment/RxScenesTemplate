@@ -7,7 +7,7 @@ protocol ___VARIABLE_sceneName___Navigator {
 }
 
 class Default___VARIABLE_sceneName___Navigator: ___VARIABLE_sceneName___Navigator {
-    private let navigationController: UINavigationController
+    private weak var navigationController: UINavigationController!
     private let store: StoreInterface
 
     init(store: StoreInterface, navigationController: UINavigationController) {
